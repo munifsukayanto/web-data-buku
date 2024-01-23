@@ -1,0 +1,35 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP63qD0at3DYyIm0n5Ihj4dGwWjGvjqnrMIA&usqp=CAU);
+    background-size: cover;
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 40px;
+}   
+
+.gallery ::after {
+    content: "";
+    width: 350px;
+}
+
+.gallery>img:hover {
+    transform: scale(1.3);
+}
